@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant', serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    background: #423E37;
+    color: #EDEBD7;
+    text-shadow: 0 .125rem .125rem #6E675F;
+}
+
+main {
+    flex: auto;
+    display: flex;
+    text-align: center;
+    background: #EDEBD7;
+    color: #2b2924;
+}
+
+#original, #chiffre {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#original > div, #chiffre > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#original > div > input, #chiffre > div > input {
+    margin: 2rem;
+    padding: .25rem;
+    font-size: 1.5rem;
+}
+
+#cle {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#cle > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#cle > div > input {
+    margin: 1rem;
+    padding: .25rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#cle > div > div > i {
+    font-size: 2rem;
+    margin: .5rem;
+    padding: 1rem 1.125rem;
+    border-radius: 50%;
+    background: #2b2924;
+    color: #EDEBD7;
+}
+
+#cle > div > div > i:hover {
+    background: #6E675F;
+    color: #2b2924;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    background: #6E675F;
+    color: #EDEBD7;
+    text-shadow: 0 .125rem .125rem #423E37;
+}

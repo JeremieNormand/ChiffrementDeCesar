@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiffrement de César</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Chiffrement de César</h1>
+    </header>
+
+    <main>
+        <section id="original">
+            <div>
+                <h2>Original</h2>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+            <div></div>
+        </section>
+        <section id="cle">
+            <div>
+                <h3>Clé</h3>
+                <input type="text" placeholder="0 - 26">
+            </div>
+            <div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-arrow-right" onclick="onClickEncode()"></i>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-arrow-left" onclick="onClickDecode()"></i>
+                </div>
+            </div>
+            <div></div>
+        </section>
+        <section id="chiffre">
+            <div>
+                <h2>Chiffré</h2>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+            <div></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Jérémie Normand - 2022</p>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+
+</html>
